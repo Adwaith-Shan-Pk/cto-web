@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CTO@FOUNDERFIE</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="clocks.css">
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon/favicon.png">
+    <!-- box icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <!-- header design -->
+     <header class="header">
+        <a href="#" class="logo">Adwaith Shan.</a>
+
+     </header>
+    <!-- end of header design -->
+     <section class="home">
+        <div class="child1">
+            <div class="home-content">
+                <h1>Hi, I'm Adwaith Shan </h1>
+                <h3>CTO FOUNDERFIE</h3>
+                <p>For More Info Please Visit Personal Site.</p>
+                
+                <div class="btn-box">
+                    <a href="https://shan.is-a.dev" target="_blank">Personal Site</a>
+                    <a href="mailto:mail@shan.is-a.dev" target="_blank">Contact Me</a>
+                </div>
+            </div>
+
+            
+        
+        </div>
+        
+        <div class="child2">
+            <div class="wrapper">
+                <div class="display">
+                    <div id="time"></div>
+                </div>
+                <span></span>
+                <span></span>
+            </div>
+
+            <script>
+                setInterval(()=>{
+                const time = document.querySelector("#time");
+                let date = new Date();
+                let hours = date.getHours();
+                let minutes = date.getMinutes();
+                let seconds = date.getSeconds();
+                let day_night = "AM";
+                if(hours > 12){
+                    day_night = "PM";
+                    hours = hours - 12;
+                }
+                if(hours < 10){
+                    hours = "0" + hours;
+                }
+                if(minutes < 10){
+                    minutes = "0" + minutes;
+                }
+                if(seconds < 10){
+                    seconds = "0" + seconds;
+                }
+                time.textContent = hours + ":" + minutes + ":" + seconds + " " + day_night;
+                });
+            </script>
+        </div>
+     </section>
+     
+    <!-- links -->
+     <section class="links">
+        <div  class="linkss">
+            <a href="https://www.x.com/@Lordlinux69"><i class='bx bxl-twitter' ></i></a>
+            <a href="https://www.linkedin.com/in/adwaith-shan/" target="_blank"><i class='bx bxl-linkedin' ></i></a>
+            <a href="https://www.github.com/Adwaith-Shan-Pk" target="_blank"><i class='bx bxl-github' ></i></a>
+        </div>
+        
+     </section>
+     <!-- links -->
+     <!-- <section class="Copyright">
+        <div  class="Copyright">
+            <P>Credits: Adwaith Shan & Nithin Biju</P>
+        </div> -->
+     </section>
+     <!--To Work In Future If Needed-->
+    <!-- about section design -->
+    <!-- education section design -->
+    
+     <!-- skills section design -->
+     
+    <!-- contact section design -->
+    <!-- footer section -->
+    
+    <script src="js/script.js"></script> 
+</body>
+</html>
